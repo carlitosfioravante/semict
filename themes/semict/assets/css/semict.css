@@ -62,16 +62,19 @@ body {
 }
 
 #logo_semict {
-    margin: 0 15px 20px 0;
+    margin: 0 0 15px 0;
 }
 
 #titulo {
+    width: 400px;
     border-top: 2px solid #9fb2ba;
-    padding-top: 10px;
+    margin: 0 0 0 auto;
+}
+#titulo h1{
     color: #638812;
-    font-size: 18px;
+    font-size: 14.3px;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 25px;
 }
 
 .content {
@@ -92,12 +95,15 @@ body {
 }
 
 h2 {
-    background-color: #edeff1;
     color: #00355e;
     font-size: 14px;
     line-height: 30px;
     font-weight: normal;
     text-indent: 20px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .menu {
@@ -130,7 +136,7 @@ h2 {
 }
 
 a, a:visited {
-    color: blue;
+    
     text-decoration: underline;
 }
 
@@ -314,4 +320,24 @@ a, a:visited {
 }
 #conteudo {
     display: none;
+}
+
+.breadcrumb li+li:before {
+    content:"/ ";
+    padding: 0 5px;
+    color: #ccc;
+}
+
+.breadcrumb a {
+    color: #00355e;
+}
+
+.breadcrumb li:last-child a {
+    color: #999999;
+    text-decoration: none;
+}
+
+h1 {
+    color: #00355e;
+    margin-bottom: 30px;
 }
