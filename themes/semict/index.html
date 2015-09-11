@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+	{% if meta.description %}
+	<meta name="description" content="{{ meta.description }}"> 
+	{% endif %}{% if meta.robots %}
+	<meta name="robots" content="{{ meta.robots }}">
+	{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ theme_url }}/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ theme_url }}/assets/css/semict.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="{{ theme_url }}/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--
+    <link rel="shortcut icon" href="{{ theme_url }}/assets/ico/favicon.png"/>
+    -->
+  </head>
+  <body>
+      <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+        <ul id="menu-barra-temp" style="list-style:none;">
+            <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+            <li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+        </ul>
+    </div>
+    <div id="corpo">  
+        <div id="topo">
+            <div class="col_esq">
+                <img id="logo" src="{{ theme_url }}/assets/img/logo.png" alt="IFMS" Title="Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul"/><br/>
+                <div class="col_esq"><p>Ministério da<br/>Educação</p></div>
+                <div class="col_esq"><p>Ministério da Ciência,<br/> Tecnologia e Inovação</p></div>
+                <div class="col_esq"><img id="cnpq" src="{{ theme_url }}/assets/img/cnpq.png" alt="CNPq" Title="CNPq"/></div>
+            </div>
+            <div class="col_dir" style="text-align: right;">
+                <img id="logo_semict" src="{{ theme_url }}/assets/img/logo_semict.png" alt="Semict" Title="Seminário de Iniciação Científica e Tecnológica"/><br/>
+                <h1 id="titulo">Semana de Ciência e Tecnologia do IFMS 2014<br/>SEMICT 2014 . Câmpus Coxim . 22 de setembro</h1>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- Content
+        ================================================== -->
+        <div class="content">
+                {{ content }}
+        </div>
+        <div id="footer">
+            <p>© 2009-2014 Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul. Todos os direitos reservados.<br/>
+            Reitoria: Rua Ceará, 972, Bairro Santa Fé – Campo Grande/MS – CEP: 79021-000<br/>
+            Telefone: (67) 3042-5117</p>
+        </div>
+    </div>
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript">        
+        $(document).ready(function() {
+            var content = $('#conteudo');
+            
+            $('a.janela').on('click', function( e ){
+                e.preventDefault();
+
+                var href = $( this ).attr('href');
+                var title = $(this).attr("title");
+                
+                $.ajax({
+                    url: href,
+                    success: function( response ){
+                        //forçando o parser
+                        var data = $( '<div>'+response+'</div>' ).find('.content').html();
+                        //apenas atrasando a troca, para mostrarmos o loading
+                        content.html(data);
+                        content.dialog({
+                            width: 800,
+                            height: 600,
+                            modal: true,
+                            autoOpen: false,
+                            title: title
+                        })
+                        content.dialog('open');
+                     }
+                });
+
+            });
+        });
+    </script>
+    <script defer="defer" async="async" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+  </body>
+</html>

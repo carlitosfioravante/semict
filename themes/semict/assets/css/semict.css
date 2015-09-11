@@ -1,0 +1,317 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/09/2014, 14:55:47
+    Author     : carlitos
+*/
+
+* {
+    font-family: Arial, Helvetica, verdana;   
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#topo p {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+#topo {
+    margin-top: 80px;
+}
+
+#topo p {
+    margin-right: 15px;
+}
+
+#logo {
+    margin: 0 0 15px 0;
+}
+
+#cnpq {
+    margin: 0 0 0 10px;
+}
+
+#corpo {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+#footer {
+    border-top: 3px solid #edeff1;
+    padding: 15px 0 0 0;
+    margin-top: 15px;
+}
+
+#footer p {
+    text-align: center;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000;
+}
+
+#logo_semict {
+    margin: 0 15px 20px 0;
+}
+
+#titulo {
+    border-top: 2px solid #9fb2ba;
+    padding-top: 10px;
+    color: #638812;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.content {
+  /* background-image:url("{{ theme_url }}/assets/img/hotsite_13_maio_14_semana_cst_reduzida.jpg");*/
+  background-color: {% if meta.bgColor %} {{ meta.bgColor }} {% else %} #9FB2BA {% endif %};
+}
+
+.col_esq {
+    float: left;
+}
+
+.col_dir {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    background-color: #edeff1;
+    color: #00355e;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-indent: 20px;
+}
+
+.menu {
+    margin: 20px 0 10px 90px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 0 0 15px 0;
+}
+
+.menu ul li:before {
+    content:"\25ba";
+    color: #c00c0c;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.menu ul li a {
+    color: #00355e;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+a, a:visited {
+    color: blue;
+    text-decoration: underline;
+}
+
+#container_map {
+    position: relative;
+    text-align: center;
+}
+
+.map_1 {
+    position: absolute;
+    left: 310px;
+    width: 321px;
+    height: 45px;
+}
+
+#feciaq {
+    top: 372px;
+}
+
+#feciaq a, #fecintec a, #fecipan a, #fecitecx a, #fecinova a, #fecifron a, #fecitel a {
+    display: block;
+    width: 321px;
+    height: 45px;
+}
+
+#fecintec {
+    top: 434px;
+}
+
+#fecipan {
+    top: 492px;
+}
+
+#fecitecx {
+    top: 552px;
+}
+
+#fecinova {
+    top: 612px;
+}
+
+#fecifron {
+    top: 670px;
+}
+
+#fecitel {
+    top: 726px;
+}
+
+.map_2 {
+    position: absolute;
+    width: 85px;
+    height: 102px;
+}
+
+.map_2 a {
+    display: block;
+    width: 85px;
+    height: 102px;
+}
+
+#fecipan_2 {
+    left: 707px;
+    top: 435px;
+}
+
+#fecitecx_2 {
+    left: 893px;
+    top: 399px;
+}
+
+#fecintec_2 {
+    left: 900px;
+    top: 535px;
+}
+
+#feciaq_2 {
+    left: 820px;
+    top: 532px;
+}
+
+#fecitel_2 {
+    left: 1089px;
+    top: 562px;
+}
+
+#fecinova_2 {
+    left: 981px;
+    top: 662px;
+}
+
+#fecifron_2 {
+    left: 838px;
+    top: 682px;
+}
+
+#container_map_feiras_semict {
+    position: relative;
+    text-align: center;
+}
+
+#container_map_feiras_semict > #feiras > a{
+    position: absolute;
+    left: 480px;
+    top: 250px;
+    width: 135px;
+    height: 150px;
+    display: block;
+}
+
+#container_map_feiras_semict > #semict > a{
+    position: absolute;
+    left: 798px;
+    top: 250px;
+    width: 135px;
+    height: 150px;
+    display: block;
+}
+
+#container_map_semict {
+    position: relative;
+    text-align: center;
+}
+
+.map_3 {
+    position: absolute;
+    width: 348px;
+    height: 30px;
+}
+
+#evento a, #objetivos a, #publico a, #normas_elaboracao a, #normas_apresentacao a, #realizacao a, #cronograma a, #inscricao a, #contato a {
+    position: absolute;
+    display: block;
+    width: 348px;
+    height: 30px;
+}
+
+#evento a {
+    left: 180px;
+    top: 452px;
+}
+
+#objetivos a {
+    left: 546px;
+    top: 452px;
+}
+
+#publico a {
+    left: 907px;
+    top: 452px;
+}
+
+#realizacao a {
+    left: 180px;
+    top: 495px;
+}
+
+#normas_elaboracao a {
+    left: 546px;
+    top: 495px;
+}
+
+#normas_apresentacao a {
+    left: 907px;
+    top: 495px;
+}
+
+#cronograma a {
+    left: 180px;
+    top: 539px;
+}
+
+#inscricao a {
+    left: 546px;
+    top: 539px;
+}
+
+#contato a {
+    left: 907px;
+    top: 539px;
+}
+#conteudo {
+    display: none;
+}

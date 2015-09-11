@@ -1,0 +1,14 @@
+/*padrao: preto*/
+#barra-brasil-v3 { position:relative; clear:both; overflow:hidden; height:28px; background:#00500f url(../images/barra-brasil-v3-bgx.png) center bottom no-repeat }       
+#barra-brasil-v3-marca { height:28px; width:960px; margin:0 auto; overflow:hidden; text-indent:-9999px; background:transparent url(../images/barra-brasil-v3-verde.png) right bottom no-repeat }
+/*variacoes site a site*/
+.barraGovernoEsquerda { background-image:none !important }
+.barraGovernoEsquerda #barra-brasil-v3-marca { margin:0 !important }
+.barraGovernoVerde { background-color:#00500f !important }
+.barraGovernoVerde #barra-brasil-v3-marca { background-image:url(../images/barra-brasil-v3-verde.png) !important }
+.barraGovernoAzul { background-color:#004b82 !important }
+.barraGovernoAzul #barra-brasil-v3-marca { background-image:url(../images/barra-brasil-v3-azul.png) !important }
+.barraGovernoCinza { background-color:#7f7f7f !important }
+.barraGovernoCinza #barra-brasil-v3-marca { background-image:url(../images/barra-brasil-v3-cinza.png) !important }
+.barraGovernoPreto { background-color:#000 !important }
+.barraGovernoPreto #barra-brasil-v3-marca { background-image:url(../images/barra-brasil-v3-preto.png) !important }

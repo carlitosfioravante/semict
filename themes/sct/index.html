@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+	{% if meta.description %}
+	<meta name="description" content="{{ meta.description }}"> 
+	{% endif %}{% if meta.robots %}
+	<meta name="robots" content="{{ meta.robots }}">
+	{% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ theme_url }}/assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+        body {
+          /* background-image:url("{{ theme_url }}/assets/img/hotsite_13_maio_14_semana_cst_reduzida.jpg");*/
+          background-color: {% if meta.bgColor %} {{ meta.bgColor }} {% else %} #9FB2BA {% endif %};
+          margin: 0 auto;
+          padding: 0;
+          width: 1440px;
+          height: 896px;
+        }
+
+        a, a:visited {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        #container_map {
+            position: relative;
+            text-align: center;
+        }
+        
+        .map_1 {
+            position: absolute;
+            left: 310px;
+            width: 321px;
+            height: 45px;
+        }
+
+        #feciaq {
+            top: 372px;
+        }
+
+        #feciaq a, #fecintec a, #fecipan a, #fecitecx a, #fecinova a, #fecifron a, #fecitel a {
+            display: block;
+            width: 321px;
+            height: 45px;
+        }
+        
+        #fecintec {
+            top: 434px;
+        }
+        
+        #fecipan {
+            top: 492px;
+        }
+        
+        #fecitecx {
+            top: 552px;
+        }
+        
+        #fecinova {
+            top: 612px;
+        }
+        
+        #fecifron {
+            top: 670px;
+        }
+        
+        #fecitel {
+            top: 726px;
+        }
+        
+        .map_2 {
+            position: absolute;
+            width: 85px;
+            height: 102px;
+        }
+        
+        .map_2 a {
+            display: block;
+            width: 85px;
+            height: 102px;
+        }
+        
+        #fecipan_2 {
+            left: 707px;
+            top: 435px;
+        }
+        
+        #fecitecx_2 {
+            left: 893px;
+            top: 399px;
+        }
+        
+        #fecintec_2 {
+            left: 900px;
+            top: 535px;
+        }
+        
+        #feciaq_2 {
+            left: 820px;
+            top: 532px;
+        }
+        
+        #fecitel_2 {
+            left: 1089px;
+            top: 562px;
+        }
+        
+        #fecinova_2 {
+            left: 981px;
+            top: 662px;
+        }
+        
+        #fecifron_2 {
+            left: 838px;
+            top: 682px;
+        }
+        
+        #container_map_feiras_semict {
+            position: relative;
+            text-align: center;
+        }
+        
+        #container_map_feiras_semict > #feiras > a{
+            position: absolute;
+            left: 480px;
+            top: 250px;
+            width: 135px;
+            height: 150px;
+            display: block;
+        }
+        
+        #container_map_feiras_semict > #semict > a{
+            position: absolute;
+            left: 798px;
+            top: 250px;
+            width: 135px;
+            height: 150px;
+            display: block;
+        }
+        
+        #container_map_semict {
+            position: relative;
+            text-align: center;
+        }
+        
+        .map_3 {
+            position: absolute;
+            width: 348px;
+            height: 30px;
+        }
+        
+        #evento a, #objetivos a, #publico a, #normas_elaboracao a, #normas_apresentacao a, #realizacao a, #cronograma a, #inscricao a, #contato a {
+            position: absolute;
+            display: block;
+            width: 348px;
+            height: 30px;
+        }
+        
+        #evento a {
+            left: 180px;
+            top: 452px;
+        }
+        
+        #objetivos a {
+            left: 546px;
+            top: 452px;
+        }
+        
+        #publico a {
+            left: 907px;
+            top: 452px;
+        }
+        
+        #realizacao a {
+            left: 180px;
+            top: 495px;
+        }
+        
+        #normas_elaboracao a {
+            left: 546px;
+            top: 495px;
+        }
+        
+        #normas_apresentacao a {
+            left: 907px;
+            top: 495px;
+        }
+        
+        #cronograma a {
+            left: 180px;
+            top: 539px;
+        }
+        
+        #inscricao a {
+            left: 546px;
+            top: 539px;
+        }
+        
+        #contato a {
+            left: 907px;
+            top: 539px;
+        }
+        
+    </style>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="{{ theme_url }}/assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--
+    <link rel="shortcut icon" href="{{ theme_url }}/assets/ico/favicon.png"/>
+    -->
+  </head>
+
+    <!-- Content
+    ================================================== -->
+    <div class="content">
+            {{ content }}
+    </div>
+
+    
+    <!-- Footer
+    ================================================== -->
+    <!--
+    <hr class="soften">
+    <footer class="footer">
+      <div class="container">
+          
+      <a href="http://pico.dev7studios.com">Pico</a> was made by <a href="http://gilbert.pellegrom.me">Gilbert Pellegrom</a> 
+      from <a href="http://dev7studios.com">Dev7studios</a>.</br>
+      <a href="http://twitter.github.io/bootstrap/">Theme by the Bootstrap Team</a> - converted to Pico by <a href="https://github.com/firemylazer">Steffen Gehrig</a>
+      </div>
+    </footer>
+    -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript">        
+        $(document).ready(function() {
+            /*
+            $('.dialog').click(function (e) {
+                console.log('cliquei');
+                e.preventDefault();
+                var $link = $(this);
+                
+                // load the html file using ajax
+                $.get($link.attr('href'), function(resp){
+                    var data = $('<div></div>').append(resp);
+                    data.dialog({
+                        title: $link.attr('title'),
+                        width: 800,
+                        height: 600,
+                        modal: true
+                    });
+                });
+                console.log('cliquei 2');
+            });
+            
+            $('.dialog').click(function(e){
+                e.defaultPrevented();
+                var $link = $(this);
+                var $dialog = $('<div></div>')
+                    .load($link.attr('href'))
+                    .dialog({
+                            autoOpen: false,
+                            title: $link.attr('title'),
+                            width: 800,
+                            height: 600,
+                            modal: true
+                    });
+                $dialog.dialog('open');    
+            });
+            
+            var i = 0;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+            $('.janela').each(function() {
+		var $link = $(this);
+                //var $content = $('<div></div>').load($link.attr('href'));               
+		var janela = $('<div></div>')
+                    .load($link.attr('href'))
+                    .dialog({
+                            autoOpen: false,
+                            title: $link.attr('title'),
+                            width: 800,
+                            height: 600,
+                            modal: true
+                    });
+
+		$link.click(function() {
+			janela.dialog('open');
+
+			return false;
+		});
+                
+                console.log('Iteraçao: ' + i);
+                i++;
+            });
+            */
+           
+           function showDialog(){
+                $("#conteudo").dialog({
+                    width: 800,
+                    height: 600,
+                    modal: true,
+                    autoOpen: false
+                });
+            }
+            
+            $(".janela").unbind('click');
+            $(".janela").bind('click',function(){
+                showDialog();
+                var titletext=$(this).attr("title");
+                var openpage=$(this).attr("href");
+                $("#conteudo").dialog( "option", "title", titletext );
+                
+                $("#conteudo").load(openpage, function(){
+                    $("#conteudo").dialog('open');
+                });
+                        
+                return false;
+            });
+            
+            $('.no-dialog').click(function(e){
+                e.defaultPrevented();
+            });
+        });
+    </script>
+    
+  </body>
+</html>

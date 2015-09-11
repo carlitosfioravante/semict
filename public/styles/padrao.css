@@ -1,0 +1,375 @@
+﻿
+body {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #505050;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #939393;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 130%;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: underline;
+	color: #505050;
+}
+
+a:hover {
+    text-decoration: none;
+	color: #505050;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+    background: #ffffff;
+}
+
+img {
+	border: none;
+}
+
+
+
+/* Governo */
+#governo {
+	height:30px;
+	width: auto;
+	background-color:#FFCC00;
+	margin-left:0px;
+	text-align:center;
+	margin-top: 0;
+}
+
+select.govselect {
+	font-size: 10px;
+    margin:0.4em 0 0;
+	padding:0;
+    height: 17px;
+    _float: left;
+    width:185px;
+    _margin-left: 250px;
+}
+
+#governoopcoes{
+	font-size: 10px;
+}
+
+#links {
+     width:1000px;
+     text-align:center;
+     margin:auto;
+}
+
+#ministerio{
+     width: 170px;
+     float: left;
+     margin-top: 3px;
+}
+
+#gov{
+     width: 79px;
+     float: right;
+     margin-top: 3px;
+}
+
+/* Header */
+
+#header {
+	width: 935px;
+	height: 191px;
+	margin: 0 auto;
+	background: #fff url(../images/header.jpg) no-repeat left;
+}
+
+#insideheader {
+	width: 935px;
+	height: 191px;
+	margin: 0 auto;
+	background: #fff url(../images/inside_header.jpg) no-repeat left;
+}
+
+#container {
+	width: 1000px;
+	margin: auto;
+    background: #ffffff;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#conteudo {
+	margin: 0;
+	width: 100%;
+	background: #FFFFFF;
+}
+
+span.acesskey { text-decoration: underline; font-weight: bold; color:green; }
+
+/* Logo */
+
+#logo {
+	margin: 0;
+	width: 690px;
+	height: 240px;
+	background: #FFFFFF;
+}
+
+/* Banner */
+
+#banner {
+	background-color: #ffffff;
+	width: 710px;
+	height: 410px;
+	vertical-align: middle;
+}
+
+#barraSuperior{
+	width:1000px; 	/* Para customizar o tamanho da barra altere esse valor e o valor de .bsCentro */
+	display:block;
+	height:36px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#barraSuperior div{
+	display:block;
+	height:36px;
+}
+
+#barraSuperior .bsEsquerda{
+	float:left;
+	background:url(../images/BarraSuperior01.png);
+	width:274px;
+}
+
+#barraSuperior .bsCentro{
+	width:34px;
+	float:left;
+	background:url(../images/BarraSuperior02.png);
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#barraSuperior .bsDireita{
+	float:right;
+	background:url(../images/BarraSuperior03.png);
+	width:692px;
+}
+
+#barraSuperior .barraLogo{
+	float:left;
+	width:205px;
+	height:26px;
+	margin-left:50px;
+	margin-top:6px;
+	background:url(../images/BarraLogo.png) no-repeat center center;
+	_background:none!important;
+}
+
+.cadfieldset
+{
+	text-align: left;
+	font-size: 14px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	margin:0px;
+	margin-top: 20px;
+	width: 1000px;;
+}
+
+/* Titulo do topo de conteúdo */
+.titulo_pagina
+{
+	clear:both;
+	width: 100%;
+	font-size:18pt;
+	color:#003;
+	font-weight:bold;
+	margin: auto;
+	text-align: center;
+}
+
+.linha_titulo_pagina
+{
+	width: 99%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 1px;
+	line-height: 1px;
+	padding-bottom:5px;
+	background:url(../images/css/linha_abaixo.gif) repeat-x;
+	margin-top:4px;
+}
+
+.titulo_cadastro
+{
+	text-align: left;
+	font-size: 14px;
+	width: 140px;
+}
+
+.titulo_cadastro_bold
+{
+	text-align: left;
+	font-size: 14px;
+	width: 150px;
+	font-weight: bold;
+}
+
+.titulo_cadastro_center
+{
+	text-align: center;
+	font-size: 14px;
+	width: 140px;
+}
+
+.titulo_cadastro_rigth
+{
+	text-align: right;
+	font-size: 14px;
+	width: 140px;
+}
+
+.conteudo_cadastro
+{
+	text-align: left;
+	font-size: 14px;
+	width: inherit;
+}
+
+.linha_zebrada
+{
+	background-color: #f4f4f4;
+}
+
+.linha_zebrada_relatorio
+{
+	background-color: #a6a6a6;
+}
+
+.titulo_tabela
+{
+	font-size:16px;
+	color:#003;
+	font-weight:bold;
+}
+
+.paginationControl
+{
+	width: 100%;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size:16px;
+	text-align: center;
+}
+
+#govbar {
+	background: url(../images/bar-barra.png) no-repeat left top;
+	width: 992px;
+	height: 39px;
+	margin: 0 auto;
+}
+
+#logo-republica-bv2 {
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 5px 0 0 30px;
+}
+	
+#logo-gov-bv2 {
+		display: block;
+		float: right;
+		margin: 0;
+		padding: 5px 21px 0 0;
+}
+
+#wrapper p {
+	text-align: center;
+}
+
+#wrapper{
+	width: 400px;
+	margin: 0 auto;
+}
+
+#button_env {
+	width: 50px;
+	margin-left: 10px;
+	float: left;
+}
+
+#logmein {
+	border: 1px solid #D2D5BE;
+	width: 300px;
+	float: left;
+}
+
+.botao_insc {
+	text-align: center;
+	font-size: 120%;
+}
+
+#form_codigo label, #form_codigo input, #form_codigo a {
+	margin: 5px;
+}
+
+.goleft {
+	width: 130px;
+	text-align: left;
+	float: left;
+	margin-top: 10px;
+}
+
+.goright {
+	text-align: right;
+	width: 130px;
+	float: left;
+}
+
+.botao {
+	width: 75px;
+	height: 19px;
+	text-align: center;
+	cursor: pointer;
+	margin: 5px;
+	border: 1px solid #F0F4D6;
+	background-color: green;
+	color: #F0F4D6;
+	font-weight: bold;
+}
+
+.botao:hover {
+	border: 1px solid green;
+	background-color: #F0F4D6;
+	color: green;
+}
