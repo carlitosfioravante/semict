@@ -1,5 +1,5 @@
 /*
-Title: Semict - 2014
+Title: Semict - 2015
 BgColor: #B7C6CB
 Editor: no
 Template: pagina_inicial
