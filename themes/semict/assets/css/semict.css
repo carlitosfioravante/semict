@@ -49,9 +49,18 @@ body {
 }
 
 #footer {
-    border-top: 3px solid #edeff1;
-    padding: 15px 0 0 0;
     margin-top: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+ 
+#footer .box {
+    width: 960px;
+    border-top: 3px solid #edeff1;
+    margin: 0 auto;
+    padding: 15px 0 0 0;
 }
 
 #footer p {
@@ -75,6 +84,8 @@ body {
     font-size: 14.3px;
     font-weight: normal;
     line-height: 25px;
+    padding: 0;
+    margin: 10px 0;
 }
 
 .content {
@@ -320,6 +331,10 @@ a, a:visited {
 }
 #conteudo {
     display: none;
+}
+
+.breadcrumb {
+    margin-top: 20px;
 }
 
 .breadcrumb li+li:before {
