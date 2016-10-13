@@ -23,3 +23,4 @@ $config['custom_setting'] = 'Hello'; 	// Can be accessed by {{ config.custom_set
 */
 $config['theme'] = 'semict'; 
 $config['site_title'] = 'Semict';
+$config['content_dir'] = CONTENT_DIR;

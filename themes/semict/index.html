@@ -15,6 +15,8 @@
     <!-- Le styles -->
     <link href="{{ theme_url }}/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ theme_url }}/assets/css/semict.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="{{ theme_url }}/assets/js/html5shiv.js"></script>
@@ -32,22 +34,8 @@
     </div>
     <div id="corpo">  
         <div id="topo">
-            <div class="col_esq">
-                <a href=""><img id="logo" src="{{ theme_url }}/assets/img/logo.png" alt="IFMS" Title="Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul"/></a><br/>
-                <div class="col_esq"><p>Ministério da<br/>Educação</p></div>
-                <div class="col_esq"><p>Ministério da Ciência,<br/> Tecnologia e Inovação</p></div>
-                <div class="col_esq"><img id="cnpq" src="{{ theme_url }}/assets/img/cnpq.png" alt="CNPq" Title="CNPq"/></div>
-            </div>
-            <div class="col_dir" style="text-align: right;">
-                <img id="logo_semict" src="{{ theme_url }}/assets/img/site_semict_marca.jpg" alt="Semict" Title="Seminário de Iniciação Científica e Tecnológica"/>
-                <div id="titulo">
-                    <h1>Semana de Ciência e Tecnologia do IFMS 2015<br/>SEMICT 2015 . Campus Ponta Porã . 19 e 20 de outubro</h1>
-                </div>
-            </div>
-            <div class="clear"></div>
+            <a href="" title="Seminário de Iniciação Científica e Tecnológica - SEMICT 2016"><img src="{{ theme_url }}/assets/img/topo_site_semict_2016.png" alt="Semict 2016"/></a>
         </div>
-        <!-- Content
-        ================================================== -->
         <div class="content">
             {% if breadcrumbs %}
               <ol class="breadcrumb">
@@ -63,12 +51,12 @@
         </div>
         <div id="footer">
             <div class="box">
-                <p>© 2009-2015 Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul. Todos os direitos reservados.<br/>
+                <p>© 2009-2016 Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul. Todos os direitos reservados.<br/>
                 Reitoria: Rua Ceará, 972, Bairro Santa Fé – Campo Grande/MS – CEP: 79021-000<br/>
                 Telefone: (67) 3378-9500</p>
             </div>
         </div>
     </div>
-    <script defer="defer" async="async" src="//barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/assets/js/barra.js" type="text/javascript"></script>
   </body>
 </html>

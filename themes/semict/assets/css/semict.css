@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 * {
-    font-family: Arial, Helvetica, verdana;   
+    font-family: "Open Sans", Arial, Helvetica, verdana;   
 }
 
 h2, h3, h4, h5, h6 {
@@ -17,8 +17,7 @@ h2, h3, h4, h5, h6 {
 }
 
 body {
-  margin: 0 auto;
-  padding: 0;
+    background-color: #A8CF45;
 }
 
 #topo p {
@@ -27,11 +26,11 @@ body {
 }
 
 #topo {
-    margin-top: 80px;
+
 }
 
 #topo p {
-    margin-right: 15px;
+
 }
 
 #logo {
@@ -46,12 +45,11 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 960px;
+    background-color: #FFFFFF;
 }
 
 #footer {
     margin-top: 15px;
-    width: 100%;
-    position: absolute;
     bottom: 0;
     left: 0;
 }
@@ -60,7 +58,7 @@ body {
     width: 960px;
     border-top: 3px solid #edeff1;
     margin: 0 auto;
-    padding: 15px 0 0 0;
+    padding: 15px 0 5px 0;
 }
 
 #footer p {
@@ -90,7 +88,16 @@ body {
 
 .content {
   /* background-image:url("{{ theme_url }}/assets/img/hotsite_13_maio_14_semana_cst_reduzida.jpg");*/
-  background-color: {% if meta.bgColor %} {{ meta.bgColor }} {% else %} #9FB2BA {% endif %};
+}
+
+.content p, .content ul, .content h1, .content h4 {
+    padding: 0 20px;
+    max-width: 920px;
+}
+
+.content table {
+    margin: 0 20px;
+    max-width: 920px;
 }
 
 .col_esq {
@@ -106,19 +113,16 @@ body {
 }
 
 h2 {
-    color: #00355e;
+    color: #0f69b2;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 20px;
     font-weight: normal;
-    text-indent: 20px;
-    background-color: #f5f5f5;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
+    padding: 5px 0 5px 65px;
+    background-color: #C3E3F7;
 }
 
 .menu {
-    margin: 20px 0 10px 90px;
+    margin: 20px 0 10px 70px;
 }
 
 .menu ul {
@@ -335,20 +339,22 @@ a, a:visited {
 
 .breadcrumb {
     margin-top: 20px;
+    background-color: #C3E3F7;
+    border-radius: 0;
 }
 
 .breadcrumb li+li:before {
-    content:"/ ";
+    content:"/";
     padding: 0 5px;
-    color: #ccc;
+    color: #777;
 }
 
 .breadcrumb a {
-    color: #00355e;
+    cursor: pointer;
 }
 
 .breadcrumb li:last-child a {
-    color: #999999;
+    color: #777;
     text-decoration: none;
 }
 
